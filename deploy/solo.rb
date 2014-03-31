@@ -11,7 +11,7 @@ cookbook_path     File.join(base_dir, 'cookbooks') # put your cookbooks dir in t
 node_name         DNApi.from(File.read("/etc/chef/dna.json")).id
 inode_name "i-d54e0f84"
 {
-  "name":"my_node",
+  "name" => "my_node",
   "run_list": [
     "recipe[zendserver::single]"
   ]
