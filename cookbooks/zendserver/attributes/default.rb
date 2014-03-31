@@ -24,8 +24,8 @@ default['zendserver']['production'] = 'TRUE'
 
 # api key name and secret. Secret's length has to be 64 characters exactly.
 # The attributes have to be present, be sure to supply globally if not set here.
-default['zendserver']['apikeyname'] = ''
-default['zendserver']['apikeysecret'] = ''
+default['zendserver']['apikeyname'] = 'test'
+default['zendserver']['apikeysecret'] = '1234567890123456789012345678901234567890123456789012345678901234'
 
 default['zendserver']['adminemail'] = ''
 
