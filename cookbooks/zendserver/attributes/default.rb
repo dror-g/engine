@@ -6,7 +6,7 @@ default['zendserver']['url'] = 'http://repos.zend.com/zend-server/'
 default['zendserver']['basedirdeb'] = 'deb'
 default['zendserver']['basedirrpm'] = 'rpm'
 
-default['zendserver']['version'] = '6.1'
+default['zendserver']['version'] = '6.2'
 default['zendserver']['phpversion'] = '5.4'
 
 # In case we want Nginx instead of Apache it has to be boolean !
@@ -18,8 +18,8 @@ default['zendserver']['adminpassword'] = 'p2ssw0rd1'
 # The order number and license 
 # If needed, generate a trial license at this URL: [FILL_URL]
 # The attributes have to be present, be sure to supply globally if not set here.
-default['zendserver']['ordernumber'] = ''
-default['zendserver']['licensekey'] = ''
+default['zendserver']['ordernumber'] = 'randev'
+default['zendserver']['licensekey'] = 'OA12A0A0C01GI1BB22887DB47FDE1F17'
 default['zendserver']['production'] = 'TRUE'
 
 # api key name and secret. Secret's length has to be 64 characters exactly.
