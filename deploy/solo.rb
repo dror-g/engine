@@ -12,7 +12,5 @@ node_name         DNApi.from(File.read("/etc/chef/dna.json")).id
 inode_name "i-d54e0f84"
 {
   "name" => "my_node",
-  "run_list": [
-    "recipe[zendserver::single]"
-  ]
+  "run_list" => ["recipe[zendserver::single]"]
 }
