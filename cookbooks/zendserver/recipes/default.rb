@@ -6,6 +6,11 @@
 #
 # All rights reserved - Do Not Redistribute
 #
+log "Removing Nginx"
+package "nginx" do
+  action :purge
+end
+
 log "adding repository"
 
 # check before install that a suitable key is provided, if not bail out
