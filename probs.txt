@@ -1,0 +1,25 @@
+/etc/nginx/sites-enabled/healthcheck.conf :
+
+server {
+  listen 80;
+  server_name haproxy_health_check;
+
+  location / {
+    if (-f /etc/nginx/unhealthy.txt) { return 404; }
+    return 200;
+  }
+}
+
+
+--------------------------------
+
+/usr/bin/env: ruby : No such file or directory - called in vim /opt/resin/embedded/lib/ruby/gems/1.9.1/gems/engineyard-serverside-2.3.7/bin/engineyard-serverside
+export PATH=$PATH:/opt/resin/embedded/bin or /etc/environment
+
+WORKS:
+/opt/resin/embedded/bin in /etc/environment
+before_deploy.rb all config.latest.release
+
+
+LB:
+/lb_healthcheck
