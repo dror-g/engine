@@ -29,6 +29,6 @@ default['zendserver']['apikeysecret'] = '123456789012345678901234567890123456789
 
 default['zendserver']['adminemail'] = ''
 
-default['zendserver']['dbhost'] = ''
-default['zendserver']['dbusername'] = ''
-default['zendserver']['dbpassword'] = ''
+default['zendserver']['dbhost'] = 'ip-172-31-45-57'
+default['zendserver']['dbusername'] = 'test4_user'
+default['zendserver']['dbpassword'] = 'usd5fwqzpd620529'
